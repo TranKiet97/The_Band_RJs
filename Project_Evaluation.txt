@@ -1,0 +1,22 @@
+***Phân tích project***
+> Các thành phần cơ bản
+	header
+	navigation
+	breadcrumb
+	sidebar
+	slider
+	banner
+	content
+	footer
+
+> header
+> slider
+> content
+	about
+	tour
+	contact
+	image/map
+> footer
+
+***Dựng base***
+	
