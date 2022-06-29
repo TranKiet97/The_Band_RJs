@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* 
 1. vị trí
 2. kích thước (width, height)
@@ -21,26 +25,59 @@
     background-color: #000;
 }
 
-#nav {
+#nav, .sub-nav {
+    list-style-type: none;
+}
 
+#nav > li {
+    display: inline-block; 
 }
 
 #nav li {
-   display: inline-block; 
+   position: relative;
+}
+
+
+
+#nav > li:hover > a,
+#nav .sub-nav li:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
 }
 
 #nav li a {
     color: #fff;
     text-decoration: none;
     line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .sub-nav {
+    display: block;
 }
 
 #nav .sub-nav {
+    min-width: 160px;
     display: none;
+    position: absolute;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;  
+}
+
+#nav .sub-nav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
 }
 
 #slider {
-
+    min-height: 500px;
+    background-color: #333;
 }
 
 #content {
