@@ -229,6 +229,19 @@ html {
     background-color: #000;
 }
 
+.places-list {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tour-place {
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+
 #footer {
 
 }
