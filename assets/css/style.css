@@ -7,7 +7,7 @@
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI",Arial,sans-serif;
 }
 
 /* 
@@ -20,6 +20,10 @@ html {
 /* giải quyết vấn đề của float */
 .clear {
     clear: both;
+}
+
+.text-white {
+    color: #fff !important;
 }
 
 #main {
@@ -191,6 +195,38 @@ html {
     width: 153.58px;
     margin-bottom: 15px;
     border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tickets-list {
+    background-color: #fff;
+    margin-top: 32px;
+}
+
+.tickets-list li {
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tickets-list .sold-out {
+    padding: 0 8px;
+    margin-left: 16px;
+    color: #fff;
+    background-color: #f44336;
+}
+
+.tickets-list .quantity {
+    font-size: 15px;
+    border-radius: 50%;
+    margin-right: 16px;
+    padding: 0 5px;
+    float: right;
+    color: #fff;
+    background-color: #000;
 }
 
 #footer {
