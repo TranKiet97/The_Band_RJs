@@ -197,9 +197,11 @@ html {
     border-radius: 4px;
 }
 
-
-.tour-section {
+.tour-contain {
     background-color: #000;
+}
+
+.tour-section { 
     max-width: 800px;
     padding: 0 16px;
     margin-left: auto;
@@ -296,6 +298,24 @@ html {
 .place-buy-btn:hover {
     color: #000;
     background-color: #ccc;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    min-height: 300px;
 }
 
 #footer {

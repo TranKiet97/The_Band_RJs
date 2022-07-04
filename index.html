@@ -74,48 +74,50 @@
             </div>
 
             <!-- Tour section -->
-            <div class="tour-section">
-                <!-- Tickets -->
-                <div class="tour-content">
-                    <h2 class="section-heading text-white">TOUR DATES</h2>
-                    <p class="section-sub-heading text-white">Remember to book your tickets!</p>
-                    <ul class="tickets-list">
-                        <li>September <span class="sold-out">Sold out</span></li>
-                        <li>October <span class="sold-out">Sold out</span></li>
-                        <li>November <span class="quantity">3</span></li>
-                    </ul>
-                </div>
-                <!-- Places -->
-                <div class="places-list">
-                    <div class="place-item">
-                        <img src="/assets/img/places/newyork.jpg" alt="new-york" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">New York</h3>
-                            <p class="place-time">Fri 27 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-buy-btn">Buy Tickets</a>
-                        </div>
+            <div class="tour-contain">
+                <div class="tour-section">
+                    <!-- Tickets -->
+                    <div class="tour-content">
+                        <h2 class="section-heading text-white">TOUR DATES</h2>
+                        <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+                        <ul class="tickets-list">
+                            <li>September <span class="sold-out">Sold out</span></li>
+                            <li>October <span class="sold-out">Sold out</span></li>
+                            <li>November <span class="quantity">3</span></li>
+                        </ul>
                     </div>
-                    <div class="place-item">
-                        <img src="/assets/img/places/paris.jpg" alt="paris" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">Paris</h3>
-                            <p class="place-time">Sat 28 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-buy-btn">Buy Tickets</a>
+                    <!-- Places -->
+                    <div class="places-list">
+                        <div class="place-item">
+                            <img src="/assets/img/places/newyork.jpg" alt="new-york" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="place-item">
-                        <img src="/assets/img/places/sanfran.jpg" alt="new-york" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">San Francisco</h3>
-                            <p class="place-time">Sun 29 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-buy-btn">Buy Tickets</a>
+                        <div class="place-item">
+                            <img src="/assets/img/places/paris.jpg" alt="paris" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                            </div>
                         </div>
+                        <div class="place-item">
+                            <img src="/assets/img/places/sanfran.jpg" alt="new-york" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Sun 29 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <!-- giải quyết vấn đề của float -->
+                        <div class="clear"></div>
                     </div>
-                    <!-- giải quyết vấn đề của float -->
-                    <div class="clear"></div>
                 </div>
             </div>
 
@@ -129,7 +131,33 @@
         <div id="footer">
 
         </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal-close">
+            <i class="ti-close"></i>
+        </div>
+        <div class="modal-container">
+            <!-- Header -->
+            <header class="modal-header">
+                <i class="ti-briefcase"></i>
+                Tickets
+            </header>
+            <!-- Body -->
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" class="modal-input" placeholder="How many?">
 
+                <label for="" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input type="email" class="modal-input" placeholder="Enter email">
+            </div>
+        </div>
     </div>
 </body>
 </html>
