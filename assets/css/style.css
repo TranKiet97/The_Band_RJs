@@ -197,19 +197,32 @@ html {
     border-radius: 4px;
 }
 
+
 .tour-section {
     background-color: #000;
+    max-width: 800px;
+    padding: 0 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tour-content {
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tickets-list {
     background-color: #fff;
     margin-top: 32px;
+    
 }
 
 .tickets-list li {
     font-size: 15px;
     padding: 8px 16px;
     border-bottom: 1px solid #ddd;
+    list-style-type: none;
 }
 
 .tickets-list .sold-out {
@@ -230,17 +243,60 @@ html {
 }
 
 .places-list {
-    width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 96px;
 }
 
-.tour-place {
+.place-item {
     float: left;
     width: calc(100%/3);
-    text-align: center;
+    padding: 8px;
 }
 
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body { 
+    padding: 16px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.place-time {
+    margin: 15px 0;  
+    color: #757575;  
+}
+
+.place-desc {
+    margin: 15px 0;
+    line-height: 1.4;
+} 
+
+.place-buy-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 8px 16px;
+}
+
+.place-buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
 
 #footer {
 
