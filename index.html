@@ -134,29 +134,38 @@
     </div>
     <!-- Modal -->
     <div class="modal">
-        <div class="modal-close">
-            <i class="ti-close"></i>
-        </div>
         <div class="modal-container">
+            <div class="modal-close">
+                <i class="ti-close"></i>
+            </div>
             <!-- Header -->
             <header class="modal-header">
-                <i class="ti-briefcase"></i>
+                <i class="ti-briefcase bag-icon"></i>
                 Tickets
             </header>
             <!-- Body -->
             <div class="modal-body">
-                <label for="" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
+                <label for="ticket-quantity" class="modal-label">
+                    <i class="ti-shopping-cart cart-icon"></i>
                     Tickets, $15 per person
                 </label>
-                <input type="text" class="modal-input" placeholder="How many?">
+                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
 
-                <label for="" class="modal-label">
+                <label for="ticket-email" class="modal-label">
                     <i class="ti-user"></i>
                     Send To
                 </label>
-                <input type="email" class="modal-input" placeholder="Enter email">
+                <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email">
+
+                <button id="buy-tickets">
+                    PAY
+                    <i class="ti-check"></i>
+                </button>
             </div>
+            <!-- Footer -->
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="#">help?</a></p>
+            </footer>
         </div>
     </div>
 </body>
