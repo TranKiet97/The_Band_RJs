@@ -243,8 +243,8 @@ html {
 }
 
 .places-list {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -8px;
+    margin-right: -8px;
     padding-bottom: 96px;
 }
 
