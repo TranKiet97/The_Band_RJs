@@ -22,14 +22,46 @@ html {
     clear: both;
 }
 
+/* common */
 .text-white {
     color: #fff !important;
 }
 
-#main {
-
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+/* giải quyết vấn đề của float */
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
+.col {
+    float: left;
+    padding: 8px;
+}
+/* giải quyết vấn đề của float */
+.col::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;   
+}
+
+.col-third {
+    width: calc(100%/3);
+}
+
+/* header */
 #header {
     top: 0;
     left: 0;
@@ -114,6 +146,7 @@ html {
     color: #fff;
 }
 
+/* slider */
 #slider {
     margin-top: 46px;
     /* mặc định chiều cao bằng 50% kích thước chiều ngang chính nó */
@@ -140,10 +173,7 @@ html {
     margin-top: 25px;
 }
 
-#content {
-    
-}
-
+/* content */
 #content .content-section {
     width: 800px;
     padding: 64px 0;
@@ -167,6 +197,7 @@ html {
     text-align: center;
 }
 
+/* about-content */
 #content .about-text {
     font-size: 15px;
     margin: 15px 0;
@@ -180,8 +211,6 @@ html {
 }
 
 #content .member-item {
-    float: left;
-    width: calc(100%/3);
     text-align: center;
 }
 
@@ -197,6 +226,7 @@ html {
     border-radius: 4px;
 }
 
+/* tour content */
 .tour-contain {
     background-color: #000;
 }
@@ -245,15 +275,7 @@ html {
 }
 
 .places-list {
-    margin-left: -8px;
-    margin-right: -8px;
     padding-bottom: 96px;
-}
-
-.place-item {
-    float: left;
-    width: calc(100%/3);
-    padding: 8px;
 }
 
 .place-img {
@@ -300,6 +322,7 @@ html {
     background-color: #ccc;
 }
 
+/* Modal */
 .modal {
     position: fixed;
     top: 0;
@@ -399,8 +422,47 @@ button#buy-tickets:hover {
     color: #2196F3;
 }
 
+/* contact */
+.contact-content {
+    padding: 32px 0;
+}
 
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
 
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    margin: -4px;
+}
+
+.contact-form .form-submit-btn {
+    margin: 16px 4px;
+    padding: 12px 17px;
+    float: right;
+    color: #fff;
+    background-color: #000;
+    border: none;
+}
+
+.contact-form .form-submit-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+/* tạo hiệu ứng động */
 @keyframes modalFaceIn {
     from {
         opacity: 0;
