@@ -29,6 +29,7 @@ html {
 }
 
 .row {
+    /* margin này ảnh hưởng đến giao diện khi ở tablet */
     margin-left: -8px;
     margin-right: -8px;
 }
@@ -190,8 +191,16 @@ html {
 }
 
 /* content */
+#content {
+    /* khắc phục lỗi margin -8px và edit khoảng lề content section */
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 #content .content-section {
     width: 800px;
+    /* điều chỉnh chiều rộng phù hợp kích thước tablet */
+    max-width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
@@ -245,6 +254,8 @@ html {
 /* tour content */
 .tour-contain {
     background-color: #000;
+    /* Khắc phục lỗi margin khi dùng tablet */
+    margin: 0 -16px;
 }
 
 .tour-section { 
@@ -457,6 +468,10 @@ button#buy-tickets:hover {
 }
 
 /* map */
+.map-section {
+    /* Khắc phục lỗi margin khi dùng tablet */
+    margin: 0 -16px;
+}
 .map-section img {
     width: 100%;
 }
