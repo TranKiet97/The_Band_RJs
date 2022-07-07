@@ -88,6 +88,8 @@ html {
     /*khắc phục lỗi slide chồng lên thanh nav khi croll chuột*/
     z-index: 1;
     position: fixed;
+    /* khi các thành phần con vượt quá nó thì sẽ thực hiện thao tác này */
+    overflow: hidden;
 }
 
 #nav {

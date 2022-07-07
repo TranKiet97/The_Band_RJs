@@ -37,6 +37,9 @@
                 <i class="search-icon ti-search">
                 </i>
             </div>
+            <div class="mobile-menu-btn js-mobile-menu">
+                <i class="menu-icon ti-menu-alt"></i>
+            </div>
         </div>
             <!-- slider -->
         <div id="slider">
@@ -211,7 +214,10 @@
         const buyBtns = document.querySelectorAll('.js-buy-ticket');
         const modal = document.querySelector('.js-modal');
         const modalContainer = document.querySelector('.js-modal-container');
-        const closeBtn = document.querySelector('.js-modal-close')
+        const closeBtn = document.querySelector('.js-modal-close');
+        const header = document.querySelector('#header')
+        const menuBtn = document.querySelector('.js-mobile-menu');
+        var headerHeight = header.clientHeight;
         function showBuyTicket() {
             modal.classList.add('open');
         }
@@ -228,6 +234,25 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation();
         })
+
+        // Đóng mở menu mobile
+        menuBtn.addEventListener('click', function() {
+            if (header.clientHeight === headerHeight) {
+               header.style.height = 'auto'
+            }
+            else {
+                header.style.height = null
+            };
+        })
+
+        // Đóng menu khi click chọn option
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        for (var i=0; i <= menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.addEventListener('click', function() {
+                header.style.height = null;
+            })
+        }
     </script>
 </body>
 </html>
