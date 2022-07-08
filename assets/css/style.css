@@ -88,13 +88,12 @@ html {
     /*khắc phục lỗi slide chồng lên thanh nav khi croll chuột*/
     z-index: 1;
     position: fixed;
-    /* khi các thành phần con vượt quá nó thì sẽ thực hiện thao tác này */
-    overflow: hidden;
 }
 
 #nav {
     display: inline-block;
 }
+
 
 #nav, .sub-nav {
     list-style-type: none;
@@ -254,10 +253,10 @@ html {
 }
 
 /* tour content */
-.tour-contain {
-    background-color: #000;
-    /* Khắc phục lỗi margin khi dùng tablet */
-    margin: 0 -16px;
+.tour-content {
+    padding: 64px 0 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tour-section { 
@@ -265,13 +264,13 @@ html {
     padding: 0 16px;
     margin-left: auto;
     margin-right: auto;
-}
+}    
 
-.tour-content {
-    padding: 64px 0;
-    margin-left: auto;
-    margin-right: auto;
-}
+.tour-contain {
+    background-color: #000;
+    /* Khắc phục lỗi margin khi dùng tablet */
+    margin: 0 -16px;
+}    
 
 .tickets-list {
     background-color: #fff;

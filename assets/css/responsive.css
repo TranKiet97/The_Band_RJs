@@ -1,19 +1,29 @@
 /* pc */
 @media (min-width: 1040px) {
-    
+    .menu-icon {
+        display: none;
+    }
 }
 
 /* tablet */
 @media (max-width: 1040px) and (min-width: 740px) {
-
+    .menu-icon {
+        display: none;
+    }
 }
 
 /* mobile */
 @media (max-width: 740px) {
-    #nav > li {
-        display: block;
+    .mobile-col-full {
+        float: initial;
+        width: 100%;
     }
 
+    #header {
+        /* khi các thành phần con vượt quá nó thì sẽ thực hiện thao tác này */
+        overflow: hidden;
+    }
+    
     #header .search-btn {
         display: none;
     }
@@ -21,6 +31,9 @@
     .mobile-menu-btn {
         padding: 12.5px 20px; 
         float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
     .mobile-menu-btn:hover {
@@ -28,6 +41,7 @@
     }
 
     .menu-icon {
+        display: block;
         font-size: 15px;
         line-height: 46px;
         color: #fff;
@@ -35,5 +49,49 @@
 
     .menu-icon:hover {
         color: #000;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    #nav .sub-nav {  
+        background-color: #333;
+        position: initial;
+    }
+
+    #nav .sub-nav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #content .member-item-mobile {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    #tour .place-item-mobile {
+        float: initial;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
     }
 }
