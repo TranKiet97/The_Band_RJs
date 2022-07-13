@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
+<!-- Body -->
 <body>
     <div id="main">
+        <!-- Header -->
         <div id="header">
             <!-- ul#nav>li*5>a tab -->
-            <!-- nav -->
+            <!-- Navigation -->
            <ul id="nav">
             <li><a href="#">Home</a></li>
             <li><a href="#band">Band</a></li>
@@ -32,25 +34,25 @@
                 </ul>
             </li>
            </ul>
-            <!--search -->
+            <!-- Search Btn -->
             <div class="search-btn">
-                <i class="search-icon ti-search">
-                </i>
+                <i class="search-icon ti-search"></i>
             </div>
+            <!-- Mobile Menu Btn -->
             <div class="mobile-menu-btn js-mobile-menu">
                 <i class="menu-icon ti-menu-alt"></i>
             </div>
         </div>
-            <!-- slider -->
+        <!-- Slider -->
         <div id="slider">
             <div class="text-content">
                 <h3 class="text-heading">Chicago</h3>
                 <p class="text-description">Thank you, Chicago - A night we won't forget.</p>
             </div>
         </div>
-            <!-- content -->
+        <!-- Content -->
         <div id="content">
-            <!-- About section -->
+            <!-- About Section -->
             <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
@@ -74,8 +76,7 @@
                     <div class="clear"></div>
                 </div>
             </div>
-
-            <!-- Tour section -->
+            <!-- Tour Section -->
             <div id="tour" class="tour-contain">
                 <div class="tour-section">
                     <!-- Tickets -->
@@ -123,7 +124,7 @@
                 </div>
             </div>
 
-            <!-- Contact section -->
+            <!-- Contact Section -->
             <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
@@ -131,13 +132,15 @@
                 <div class="row contact-content">
                     <div class="mobile-col-full col col-half contact-info">
                         <p><i class="ti-location-pin"></i>Chicago, US</p>
-                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
-                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                        <!-- auto phone or email when tap on -->
+                        <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
                     </div>
                     <div class="mobile-col-full col col-half contact-form">
                         <form action="">
                             <div class="row">
                                 <div class="mobile-col-full col col-half">
+                                <!-- required*** -->
                                     <input type="text" name="" id="" placeholder="Name" required class="form-control">    
                                 </div>
                                 <div class="mobile-col-full col col-half">
@@ -154,7 +157,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Map section -->
+            <!-- Map Section -->
             <div class="map-section">
                 <img src="./assets/img/map/map.jpg" alt="Map">
             </div>
@@ -190,13 +193,11 @@
                     Tickets, $15 per person
                 </label>
                 <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
-
                 <label for="ticket-email" class="modal-label">
                     <i class="ti-user"></i>
                     Send To
                 </label>
                 <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email">
-
                 <button id="buy-tickets">
                     PAY
                     <i class="ti-check"></i>
@@ -208,8 +209,7 @@
             </footer>
         </div>
     </div>
-
-    <!-- Script for buy-ticket -->
+    <!-- Scripts -->
     <script>
         const buyBtns = document.querySelectorAll('.js-buy-ticket');
         const modal = document.querySelector('.js-modal');
@@ -234,7 +234,6 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation();
         })
-
         // Đóng mở menu mobile
         menuBtn.addEventListener('click', function() {
             if (header.clientHeight === headerHeight) {
@@ -244,7 +243,6 @@
                 header.style.height = null
             };
         })
-
         // Đóng menu khi click chọn option
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
         for (var i=0; i <= menuItems.length; i++) {
